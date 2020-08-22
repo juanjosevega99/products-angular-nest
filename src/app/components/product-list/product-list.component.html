@@ -1,1 +1,26 @@
-<p>product-list works!</p>
+<div ngFor="let product = products" class="card card-body">
+  <div class="row">
+    <div class="col md-8">
+      <ul>
+        <li>
+          id: {{product._id}}
+        </li>
+        <li>
+          name: {{product.name}}
+        </li>
+        <li>
+          description: {{product.description}}
+        </li>
+        <li>
+          price: {{product.price}}
+        </li>
+        <li>
+          created At: {{product.createdAt}}
+        </li>
+      </ul>
+    </div>
+    <div class="col md-8">
+      <img [src]="product.imageURL" class="card-img">
+    </div>
+  </div>
+</div>
