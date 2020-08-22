@@ -21,7 +21,7 @@
       <button class="btn btn-danger" (click)="deleteProduct(product._id)">
         Delete
       </button>
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" [routerLink]="['/product/edit', product._id]">
         Edit
       </button>
     </div>
