@@ -3,13 +3,16 @@ is a Web App that allows you to add have list of your favorites products.
 
 ## Features:
 
-* Add your favorite product.
+* Add your favorite product.  
 * Edit and delete products.
 
 ## Stack:
 * Angular
 * NestJS
 * Bootstrap
+
+## Preview
+![] (./docs/screenshot-preview.png)
 
 ## Installation
 
