@@ -50,4 +50,16 @@ export class ProducFormComponent implements OnInit {
       )
   }
 
+  updateProduct() {
+    delete this.product.createdAt;
+    this.productService.updateProduct(this.product._id, this.product)
+      .subscribe(
+        res => {
+          console.log(res);
+          this.router.navigate(['/product'])
+        },
+        err => console.log(err)
+      )
+  }
+
 }
