@@ -12,7 +12,7 @@ is a Web App that allows you to add have list of your favorites products.
 * Bootstrap
 
 ## Preview
-![] (./docs/screenshot-preview.png)
+![](./docs/screenshot-preview.png)
 
 ## Installation
 
