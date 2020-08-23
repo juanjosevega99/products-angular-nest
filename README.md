@@ -1,14 +1,25 @@
-# Client
+# Store Favorite Products
+is a Web App that allows you to add have list of your favorites products.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+## Features:
+
+* Add your favorite product.
+* Edit and delete products.
+
+## Stack:
+* Angular
+* NestJS
+* Bootstrap
+
+## Installation
+
+```
+npm install
+```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -22,6 +33,5 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 👨🏻‍💻 Hit me up!
+You're more than welcome to pull request any improvement or fix. You just want to talk? contact me on Twitter [@juanjosevega99](https://twitter.com/juanjosevega99)
