@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from "../../interfaces/Products";
 import { ProductService } from "../../service/product.service";
-import { Router } from "@angular/router";
-import { Route } from '@angular/compiler/src/core';
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-produc-form',
@@ -17,13 +16,27 @@ export class ProducFormComponent implements OnInit {
     price: 0,
     imageURL: '',
   }
+  
+  edit: boolean = false
 
   constructor(
     private productService: ProductService,
     private router: Router,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
+    const params = this.activatedRoute.snapshot.params
+    if (params) {
+      this.productService.getProduct(params.id)
+        .subscribe(
+          res => {
+            console.log(res);
+            this.product = res;
+            this.edit = true;
+          }
+        )
+    }
   }
 
   submitProduct() {
