@@ -8,7 +8,7 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class ProductService {
-  BASE_URL: string = "http://localhost:3000";
+  BASE_URL: string = "https://apii-products.herokuapp.com";
 
   constructor(private http: HttpClient) {}
 
